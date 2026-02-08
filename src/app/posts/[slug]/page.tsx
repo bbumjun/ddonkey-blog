@@ -44,29 +44,31 @@ export default async function PostPage({ params }: Props) {
   return (
     <article className="max-w-3xl mx-auto px-4 py-12">
       {/* Header */}
-      <header className="mb-10">
-        <div className="flex items-center gap-2 mb-4">
+      <header className="mb-10 text-center">
+        <div className="flex items-center justify-center gap-3 mb-5">
           {category && (
             <Link
               href={`/category/${post.meta.category}`}
-              className="px-2.5 py-1 text-xs font-medium rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+              className="px-3 py-1 text-xs font-medium rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 hover:bg-purple-500/20 transition-colors"
             >
               {category.emoji} {category.label}
             </Link>
           )}
-          <span className="text-sm text-gray-400">
+          <span className="text-sm text-gray-500">
             {format(new Date(post.meta.date), 'yyyy년 M월 d일', { locale: ko })}
           </span>
-          <span className="text-sm text-gray-400">· {post.readingTime}</span>
+          <span className="text-sm text-gray-500">· {post.readingTime}</span>
         </div>
 
-        <h1 className="text-3xl sm:text-4xl font-black text-gray-900 dark:text-white leading-tight mb-4">
+        <h1 className="text-3xl sm:text-4xl font-black text-gray-900 dark:text-white leading-tight mb-5">
           {post.meta.title}
         </h1>
 
-        <p className="text-lg text-gray-500 dark:text-gray-400">
+        <p className="text-base text-gray-400 dark:text-gray-500 max-w-2xl mx-auto">
           {post.meta.description}
         </p>
+
+        <div className="mt-6 border-b border-gray-800/60" />
       </header>
 
       {/* Content */}
@@ -81,7 +83,7 @@ export default async function PostPage({ params }: Props) {
             {post.meta.tags.map((tag) => (
               <span
                 key={tag}
-                className="px-3 py-1 text-sm rounded-full bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400"
+                className="px-3 py-1 text-sm rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400"
               >
                 #{tag}
               </span>
