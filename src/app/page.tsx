@@ -9,7 +9,7 @@ export default function Home() {
       {/* Hero */}
       <section className="mb-12 text-center">
         <h1 className="text-4xl sm:text-5xl font-black mb-4 text-gray-900 dark:text-white">
-          <span className="mr-2">🫏</span>donkey.dev
+          <span className="mr-2">🫏</span>ddonkey.dev
         </h1>
         <p className="text-lg text-gray-500 dark:text-gray-400 max-w-lg mx-auto">
           AI 시대의 투자와 도구

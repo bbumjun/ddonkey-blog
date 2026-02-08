@@ -6,22 +6,22 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: {
-    default: 'donkey.dev — AI 시대의 투자와 도구',
-    template: '%s | donkey.dev',
+    default: 'ddonkey.dev — AI 시대의 투자와 도구',
+    template: '%s | ddonkey.dev',
   },
   description: 'AI/테크 투자 분석, 시장 리서치, AI 도구 리뷰. 개인 투자자를 위한 인사이트.',
-  metadataBase: new URL('https://donkey.dev'),
+  metadataBase: new URL('https://ddonkey.dev'),
   openGraph: {
-    title: 'donkey.dev',
+    title: 'ddonkey.dev',
     description: 'AI 시대의 투자와 도구',
-    url: 'https://donkey.dev',
-    siteName: 'donkey.dev',
+    url: 'https://ddonkey.dev',
+    siteName: 'ddonkey.dev',
     locale: 'ko_KR',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'donkey.dev',
+    title: 'ddonkey.dev',
     description: 'AI 시대의 투자와 도구',
   },
   robots: {

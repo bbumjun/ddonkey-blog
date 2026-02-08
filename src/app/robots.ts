@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://donkey.dev/sitemap.xml',
+    sitemap: 'https://ddonkey.dev/sitemap.xml',
   };
 }

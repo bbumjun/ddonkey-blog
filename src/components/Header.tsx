@@ -10,7 +10,7 @@ export function Header() {
       <div className="max-w-4xl mx-auto px-4 h-14 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
           <span className="text-xl">🫏</span>
-          <span className="font-bold text-lg text-gray-900 dark:text-white">donkey.dev</span>
+          <span className="font-bold text-lg text-gray-900 dark:text-white">ddonkey.dev</span>
         </Link>
 
         <nav className="hidden sm:flex items-center gap-1">

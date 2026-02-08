@@ -3,7 +3,7 @@ import type { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const posts = getAllPosts();
-  const baseUrl = 'https://donkey.dev';
+  const baseUrl = 'https://ddonkey.dev';
 
   const postUrls = posts.map((post) => ({
     url: `${baseUrl}/posts/${post.slug}`,
